@@ -11,3 +11,13 @@ export default{
 }
 
 </script>
+
+<style scoped>
+    div{
+        width: 100%;
+    }
+    button{
+        width: 50%;
+        height: 50px;
+    }
+</style>

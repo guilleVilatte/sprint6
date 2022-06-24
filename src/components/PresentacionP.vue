@@ -1,20 +1,25 @@
 <template>
-<div class="presentacion">
+  <div class="presentacion">
     <h1>Bienvenido al pryecto numero uno con Vue</h1>
-    <button @click="$emit('iniciar')">Iniciar</button>
-</div>
+    <div class="boton">
+      <button @click="$emit('iniciar')">Iniciar</button>
+    </div>
+  </div>
 </template>
 
 <script>
-export default{
-    name: 'PresentacionP'
-}
-
+export default {
+  name: "PresentacionP",
+};
 </script>
 
-<style>
-    .presentacion{
-        text-align: center;
-        margin-bottom: 50px;
-    }
+<style scoped>
+.boton {
+  text-align: center;
+}
+h1 {
+  color: pink;
+  text-align: center;
+}
+
 </style>
