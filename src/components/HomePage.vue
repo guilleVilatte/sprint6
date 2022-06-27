@@ -101,7 +101,7 @@ export default {
   justify-content: center;
 }
 .cuerpo {
-  background-image:url(../../img/1.jpg);
+  background-image:url(../../public/img/1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
