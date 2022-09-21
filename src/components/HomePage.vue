@@ -64,6 +64,7 @@ export default {
       } else {
         this.postCurrentSentence = 0;
         document.querySelectorAll(".caja")[0].style.backgroundColor = "pink";
+        this.fondo.backgroundImage = this.postFrases[this.postCurrentSentence].imagen;
       }
     },
     before() {
@@ -71,10 +72,12 @@ export default {
         this.postCurrentSentence--;
         document.querySelectorAll(".caja")[0].style.backgroundColor =
           "rgba(255, 254, 254, 0.7)";
+          this.fondo.backgroundImage = this.postFrases[this.postCurrentSentence].imagen;
       } else {
         this.postCurrentSentence = 3;
         document.querySelectorAll(".caja")[0].style.backgroundColor =
           "rgba(255, 254, 254, 0.7)";
+          this.fondo.backgroundImage = this.postFrases[this.postCurrentSentence].imagen;
       }
       if (this.postCurrentSentence == 0) {
         document.querySelectorAll(".caja")[0].style.backgroundColor = "pink";
